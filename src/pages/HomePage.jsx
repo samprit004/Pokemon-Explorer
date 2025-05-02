@@ -7,6 +7,7 @@ import Pagination from '../components/Pagination';
 import Sorting from '../components/Sorting';
 import TypeFilter from '../components/TypeFilter';
 import RandomButton from '../components/RandomButton';
+import AddPokemonButton from '../components/AddPokemonButton'; // Import the new component
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorMessage from '../components/ErrorMessage';
 
@@ -95,17 +96,20 @@ function HomePage() {
       <Header />
       <div className="container mx-auto px-4 py-8">
 
-        {/* Search and Random Button Row */}
+        {/* Search and Buttons Row */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
           <div className="w-full sm:w-2/3">
             <SearchBar setSearchQuery={setSearchQuery} />
           </div>
-          <RandomButton 
-            pokemons={allPokemons} 
-            onSelect={setRandomPokemon}
-            hasRandomPokemon={!!randomPokemon}
-            onClear={clearRandomPokemon}
-          />
+          <div className="flex items-center gap-2">
+            <RandomButton 
+              pokemons={allPokemons} 
+              onSelect={setRandomPokemon}
+              hasRandomPokemon={!!randomPokemon}
+              onClear={clearRandomPokemon}
+            />
+            
+          </div>
         </div>
 
         {/* Filters Row */}
