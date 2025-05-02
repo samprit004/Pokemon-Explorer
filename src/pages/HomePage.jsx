@@ -7,7 +7,6 @@ import Pagination from '../components/Pagination';
 import Sorting from '../components/Sorting';
 import TypeFilter from '../components/TypeFilter';
 import RandomButton from '../components/RandomButton';
-import AddPokemonButton from '../components/AddPokemonButton'; // Import the new component
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorMessage from '../components/ErrorMessage';
 
