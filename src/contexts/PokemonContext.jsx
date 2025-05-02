@@ -73,7 +73,8 @@ export const PokemonProvider = ({ children }) => {
   const changePage = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
-
+   
+  
   return (
     <PokemonContext.Provider
       value={{
